@@ -1,1 +1,18 @@
 # NeuralNetworks-DeepLearning-Classification-Prediction-with-DL-Multilayered-Perceptron
+Homework 2
+
+1. Requirements to the dataset. It should be a benchmark dataset (not generated one) for classification. The number of classes should be not less than 6 and the total number of patterns (training + validation + testing) should be not less than 50,000. You need to get different statistics of the dataset (HW1) and to decide what is the best preprocessing for it and analyze.\
+
+2. DL MLP topology minimum requirements. The task is to train a machine learning algorithm to recognize a new sample from the test set correctly using feedforward Deep Learning Multilayered Perceptron (DLMLP). The block diagram is given here only for reference. The number of hidden layers should be not less than 5. Normalize the dataset you use. You choose the activation functions and the number of neurons in each layer. For weight initialization I suggest Glorot Normal.
+
+NOTE: Use for the loss function categorical crossentropy (not binary crossentropy) and for the last layer - softmax it is a multiclass classification problem. Use for the number of neurons 64, 32, 32, …, #classes or 64, 48, 48, …, #classes. Set the #epochs to 30 – 40. Set the batch size to 64 or 128 (if the total number of your dataset patterns is close or above 60000.
+
+3. Training, prediction. Use Sequential model, K-cross validation, mini-batches and mini-batch normalization, plot the loss and accuracy curves for the cases (3a – 3c) specified below. Add regularization and dropout to the model to prevent overfitting and check the performance again. Get the predicted class. Evaluate the test results.
+
+3a) Dataset Descriptive Statistics and Analysis (attach is a Template). Analysis should be no shorter than one page, Times New Roman, font 11, single space.
+
+3a) Normalize the dataset before you start training. Split the dataset into train, validate and test (70 % - 20% - 10%). Some datasets offer these three subsets, so you can use them directly as they are. Include the table and graphics presentations shown in the template for descriptive statistics (part 12. Classification). Use SGD with Nesterov Momentum. Choose activation function. Make experiments with dropout and dropout plus regularization (shown below) with red color. Evaluate test results using confusion matrix, classification report (precision, recall, f1-score, support, ROC/AUC and Precision-Recall curves). Except tables for this evaluation provide graphics of normalized confusion matrix, ROC/AUC curves. Add result analysis (not less than one page, font Times New Roman, size 11, single space.
+
+3c) Normalize the dataset before you start training. Split the dataset into train, validate and test (70 % - 20% - 10%). Some datasets offer these three subsets, so you can use them directly as they are. Include the table and graphics presentations shown in the template for descriptive statistics (Part 12. Classification). Use one of the optimizers (Adam, AdaMax, Nadam, AMSGrad etc). Choose activation function different than in 3b). Make experiments with dropout and dropout plus regularization (shown below) with red color. Evaluate test results using confusion matrix, the rest of the measures that you already have, ROC and AUC. Except tables for this evaluation provide graphics of normalized confusion matrix, ROC/AUC and Precision-Recall curves. Add result analysis (not less than one page, font Times New Roman, size 11, single space.
+
+4. Discussions, Conclusions (not less than 2 pages without repeating any of the above two analysis, more stress on Comparison and Suggestions for improvement(single space, Times New Roman font 11). Do not forget References.
